@@ -1,0 +1,210 @@
+body{
+	overflow-x: hidden;
+}
+.container{
+	width: 100vw;
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	position: relative;
+}
+
+#img1{
+	position:absolute;
+	top: 0;bottom: 0;
+	right: 0;
+	left: 0 ;
+	margin: auto;
+	transition: left 5s;
+	opacity: 0.8;
+
+	
+}
+#img1:hover{
+	left: -100vw;
+}
+
+.img2{
+	background-image: url(../asset/bicycle.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100vw;height: 100vh;
+	animation: animatedBackground 10s linear infinite alternate;
+
+	
+}
+@keyframes animatedBackground {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.2);
+	}
+	100%{
+		transform: scale(1);
+	}
+  }
+
+
+#logo{
+	position: absolute;
+	left: 25px;
+	top: 30px;
+	font-size: 20px;
+	letter-spacing: 0.4em;
+}
+
+#logo:hover{
+	cursor: default;
+}
+
+
+.header_buttons{
+	position: absolute;
+	text-align: center;
+	top: 25px;
+	font-size: 20px;
+	left: 30%;
+}
+
+.li1{
+	float: left;
+	margin-left: 20px;
+	text-decoration: none;
+	list-style: none;
+	color: black;
+}
+
+.a1{
+	text-decoration: none;
+	color: black;
+	letter-spacing: 0.2em;
+}
+
+.a1:hover{
+	color: white;
+	cursor: pointer;
+}
+
+#center_title{
+	font-size: 40px;
+	font-weight: bold;
+	color: #fff;
+	letter-spacing: 0.2em;
+	position: absolute;
+	text-align: center;
+	left: 35%;
+	top: 30%;
+}
+
+
+#center_buttons{
+	position: absolute;
+	left: 30%;
+	top: 40%;
+}
+.div1{
+	float: left;
+	margin-left: 20px;
+}
+.button1{
+	width: 280px;
+	border-radius: 20px;
+	font-size: 15px;
+	background-color: white;
+	color: black;
+	padding: 10px;
+}
+.button1:hover{
+	background-color: #dcdcdc;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+
+#left_nav{
+	position: absolute;
+	left: 0;
+	top: 40%;	
+}
+.li2{
+	text-decoration: none;
+	list-style: none;
+
+}
+
+.div2{
+	width: 5px;
+    height: 30px;
+    background-color: black;
+    margin: 3px 0;
+}
+
+.div3{
+	margin-left: 10px;
+	float: left;
+	display: none;
+}
+
+
+#center_link{
+	position: absolute;
+	top: 48%;
+	left: 48%;
+}
+.a2{
+	color: white;
+	font-size: 15px;
+}
+
+
+#dots_for_image{
+	position: absolute;
+	left: 48%;
+	top: 90%;
+}
+.dot{
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background-color: #fff;
+	margin-left: 5px;
+}
+.dot:hover{
+	background-color: #000;
+}
+/* ......................................................... */
+
+h1{
+	font-size: 5em;
+	font-family: arial,helvetica;
+	color: #fff;
+	margin:0;
+}
+.intro p{
+	color: #fff;
+}
+
+/* Centered texts in each section
+* --------------------------------------- */
+.section{
+	text-align:center;
+}
+
+/* Overwriting styles for control arrows for slides
+* --------------------------------------- */
+.controlArrow.prev {
+	left: 50px;
+}
+.controlArrow.next{
+	right: 50px;
+}
+
+
+/* Bottom menu
+* --------------------------------------- */
+#infoMenu li a {
+	color: #fff;
+}
