@@ -306,3 +306,9 @@ h1{
 	margin-left: 50px;
   }
   
+  @media only screen and (max-width: 420px) {
+	.img{
+	background-image: url(../asset/cyclemobile.jpeg);
+
+	}
+  }
