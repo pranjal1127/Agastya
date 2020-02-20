@@ -5,102 +5,118 @@
         <link type="text/css" rel="stylesheet" href="css/fullpage.css"/>
         <link type="text/css" rel="stylesheet" href="css/animate.css"/>
         <title>Home</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script>
-        $(document).ready(function(){
-          $("#img1").click(function(){
-            $("#img1").slideDown("slow");
-          });
-        });
-    </script>
-</head>
-    <body>
         
-       
-      
+        <!-- Left nav animation -->
+        <script>
+          $(document).ready(function(){
+            $("#line1").mouseenter(function(){
+              $("#text1").css('display','block');
+            });
+            $("#line1").mouseleave(function(){
+              $("#text1").css('display','none');
+            });
+            $("#line2").mouseenter(function(){
+              $("#text2").css('display','block');
+            });
+            $("#line2").mouseleave(function(){
+              $("#text2").css('display','none');
+            });
+            $("#line3").mouseenter(function(){
+              $("#text3").css('display','block');
+            });
+            $("#line3").mouseleave(function(){
+              $("#text3").css('display','none');
+            });
+            $("#line4").mouseenter(function(){
+              $("#text4").css('display','block');
+            });
+            $("#line4").mouseleave(function(){
+              $("#text4").css('display','none');
+            });
+          });
+        </script>
 
-      <div id="fullpage">
-        <div class="section ">
-          <div class="container">
-            <div class="container">
-              <img src="./asset/main_hero_homepage_desktop.jpg" id="img1" style="width: 200vw;">
-              <span id="logo" onclick="return false;">TESLA</span>
-              <div class="header_buttons">
-                <ul>
-                  <li class="li1"><a class="a1" href="#">HOME</a></li>
-                  <li class="li1"><a class="a1" href="#">BTN1</a></li>
-                  <li class="li1"><a class="a1" href="#">BTN2</a></li>
-                  <li class="li1"><a class="a1" href="#">BTN3</a></li>
-                  <li class="li1"><a class="a1" href="#">BTN4</a></li>
-                  <li class="li1"><a class="a1" href="#">BTN5</a></li>
-                </ul>
+        <!-- Menu Icon animation -->
+        <script >function myFunction(x) {
+          x.classList.toggle("change");
+          }
+        </script>
+
+    	<script>
+	        $(document).ready(function(){
+	          $("#img1").click(function(){
+	            $("#img1").slideDown("slow");
+	          });
+	        });
+    	</script>
+        
+</head>
+    
+
+    <body>
+      <nav class="header">
+              <img src="asset/logo.png" style="margin: 0;" alt="Logo Rishi Agastya Technologies" id="logo">
+                <!-- <ul>
+                  <li class="li1"><a class="a1" href="store.html">CELL1</a></li>
+                  <li class="li1"><a class="a1" href="#">ENERGY</a></li>
+                  <li class="li1"><a class="a1" href="https://jskcindia.com/">JSKC</a></li>
+                  <li class="li1"><a class="a1" href="#">R&D</a></li>
+                  <li class="li1"><a class="a1" href="#">TESTIMONIALS</a></li>
+                </ul> -->
+      </nav>
+      <div class="container">
+        <div class="img1"></div>
+      </div>
+           
+
+
+              <div id="right_tab">           
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
               </div>
-      
+              <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Clients</a>
+                <a href="#">Contact</a>
+              </div>
+
+
+            
+
+
               <div id="center_title">
                 ELECTRIC CYCLE
               </div>
       
               <div id="center_buttons">
-                <div class="div1"><a class="a1" href="#"><button class="button1">BOOK YOUR CYCLE</button></a></div>
-                <div class="div1"><a class="a1" href="#"><button class="button1">VIEW MORE DETAILS</button></a></div>  
+                <div class="div1"><a class="a1" href="/booking.html"><button class="button1">BOOK YOUR CYCLE</button></a></div>
+                <!-- <div class="div1"><a class="a1" href="#"><button class="button1">EXISTING INVENTORY</button></a></div>   -->
               </div>
       
-              <div id="left_nav">
-                <ul>
-                  <li class="li2"><div class="div2"></div><a class="a1" href="#"><div class="div3">TESLA</div></a></li>
-                  <li class="li2"><div class="div2"></div><a class="a1" href="#"><div class="div3">BIKE</div></a></li>
-                  <li class="li2"><div class="div2"></div><a class="a1" href="#"><div class="div3">TESLA</div></a></li>
-                  <li class="li2"><div class="div2"></div><a class="a1" href="#"><div class="div3">BIKE</div></a></li>
-                </ul> 
-              </div>
+
+      		  <div id="left_nav">
+	            <a class="a1" href="#"><div class="div2" id="line1"><div class="div3" id="text1">ELECTRIC CYCLE</div></div></a>
+	            <a class="a1" href="#"><div class="div2" id="line2"><div class="div3" id="text2">BATTERY</div></div></a>
+	            <a class="a1" href="#"><div class="div2" id="line3"><div class="div3" id="text3">CUSTOM ORDER</div></div></a>
+	            <a class="a1" href="#"><div class="div2" id="line4"><div class="div3" id="text4">ACCESSORIES</div></div></a>
+	          </div>
+
+            
       
-              <div id="center_link">
+              <!-- <div id="center_link">
                 <a class="a2" href="#">Visit a store</a>
-              </div>
+              </div> -->
       
-              <div id="dots_for_image">
-                <a href="#"><span class="dot"></span></a>
-                <a href="#"><span class="dot"></span></a>
-                <a href="#"><span class="dot"></span></a>
-              </div>
-      
+
+              
+        
+
             </div> 
           </div>
-        </div>
-        <div class="section " id="section0">
-          <div class="container">
-            <div class="img2"></div>
-            
-              <div id="center_title">
-                ELECTRIC CYCLE
-              </div>
-          </div>
-        </div>
-        <div class="section" id="section1">
-            <div class="slide" id="slide1">
-            <div class="intro">
-              <h1>Clickable</h1>
-              <p>
-                You can even click on the navigation and jump directly to another section.
-              </p>
-            </div>
-          </div>
-      
-            <div class="slide" id="slide2">
-            <h1>Slide 2</h1>
-          </div>
-          <div class="slide" id="slide">
-            <h1>Slide 3</h1>
-          </div>
-      
-        </div>
-        <div class="section" id="section2">
-          <div class="intro">
-            <h1>Enjoy it</h1>
-          </div>
-        </div>
-      </div>
-
+        <!-- <div class="container">
+          <div class="img2"></div>
+        </div> -->
 
       <script type="text/javascript" src="./js/fullpage.js"></script>
       <script type="text/javascript" src="./js/wow.js"></script>
@@ -128,5 +144,24 @@
       })();
       </script>
       <!--End of Tawk.to Script-->
+
+	  <script>
+        var preloader = document.getElementById('loading');
+        function myFunction() {
+          preloader.style.display = 'none';
+        }
+      </script>
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+      </script>
+
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
     </body>
 </html>    
